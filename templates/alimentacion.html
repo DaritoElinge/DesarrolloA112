@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentación</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="{{ url_for('index') }}">Index</a>
+            <li><a href="{{ url_for('home') }}">Tipo, Clasificacion y Raza</a>
+            <li><a href="{{ url_for('comportamiento') }}">Comportamiento</a>
+            <li><a href="{{ url_for('alimentacion') }}">Alimentacion</a>
+            <li><a href="{{ url_for('habitos') }}">Habitos</a>
+            <li><a href="{{ url_for('domesticacion') }}">Domesticación</a>
+        </ul>
+    </nav>
+
+    <h2>Tipo de alimentacion para perros</h2>
+
+    <div class="alimen-img">
+        <img src="{{ url_for('static', filename='img/perro-comiendo.jpg') }}" alt="Imagen Perrito Comiendo">
+    </div>
+
+    <section class="alimentacion"> 
+        <img src="{{ url_for('static', filename='img/espinaca.jpg') }}" alt="Comida">
+        <div class="alimen-texto">
+            <p>
+                el arroz, las carnes y los pescados y de frutas el plátano, el melón, la pera y la manzana. En cuanto a las verduras las opciones preferentes son las espinacas, la zanahoria y la lechuga.
+            </p>
+        </div>
+    </section>
+
+    <section class="alimentacion2">
+        <img src="{{ url_for('static', filename='img/carne.jpg') }}" alt="Comida">
+        <div class="alimen-texto">
+            <p>
+                el arroz, las carnes y los pescados y de frutas el plátano, el melón, la pera y la manzana. En cuanto a las verduras las opciones preferentes son las espinacas, la zanahoria y la lechuga.
+            </p>
+        </div>
+    </section>
+
+    <section class="alimentacion3">
+        <img src="{{ url_for('static', filename='img/banana.jpg') }}" alt="Comida">
+        <div class="alimen-texto">
+            <p>
+                el arroz, las carnes y los pescados y de frutas el plátano, el melón, la pera y la manzana. En cuanto a las verduras las opciones preferentes son las espinacas, la zanahoria y la lechuga.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

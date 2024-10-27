@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <div class="imagen-centrada" style="text-align: center; margin-top: 50px">
+        <a href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='img/perro1.jpg') }}" alt="Imagen Index" width="300px" height="300px">
+        </a>
+
+        <p>
+            <a href="{{ url_for('home') }}" style="text-decoration: none; font-size: 20px">
+                Ir a mi página principal
+            </a>
+        </p>
+    </div>
+</body>
+</html>

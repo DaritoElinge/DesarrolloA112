@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="{{ url_for('index') }}">Index</a>
+            <li><a href="{{ url_for('home') }}">Tipo, Clasificacion y Raza</a>
+            <li><a href="{{ url_for('comportamiento') }}">Comportamiento</a>
+            <li><a href="{{ url_for('alimentacion') }}">Alimentacion</a>
+            <li><a href="{{ url_for('habitos') }}">Habitos</a>
+            <li><a href="{{ url_for('domesticacion') }}">Domesticación</a>
+        </ul>
+    </nav>
+    <h2>Costumbres y Rutinas de los perros</h2>
+
+    <section class="habitos">
+        <div class="habitos-video">
+            <video controls>
+                <source src="{{ url_for('static', filename='img/videoperrito.mp4') }}" type="video/mp4">
+            </video>
+            <br>
+            <h2>Como puede observar este es el habito más común de los perros. Dormir.</h2>
+        </div>
+        
+    </section>
+</body>
+</html>

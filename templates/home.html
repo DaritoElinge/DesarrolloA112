@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="{{ url_for('index') }}">Index</a>
+            <li><a href="{{ url_for('home') }}">Tipo, Clasificacion y Raza</a>
+            <li><a href="{{ url_for('comportamiento') }}">Comportamiento</a>
+            <li><a href="{{ url_for('alimentacion') }}">Alimentacion</a>
+            <li><a href="{{ url_for('habitos') }}">Habitos</a>
+            <li><a href="{{ url_for('domesticacion') }}">Domesticación</a>
+        </ul>
+    </nav>
+
+    <section class="home">
+        <h2>Conoce todos sobre nuestros amigos peludos!</h2>
+        <div class="home-img">
+            <img src="{{ url_for('static', filename='img/perro2.jpg') }}" alt="Imagen Perrito">
+        </div>
+        
+        <p style:"text-align:center; padding: 10px">El término “perro doméstico” se refiere a cualquiera de los cientos de razas de perros que hay en el mundo hoy en día. Si bien estos animales varían drásticamente en cuanto a su apariencia, todos los perros, desde el chihuahua hasta el gran danés, son miembros de la misma especie, Canis familiaris. Esto separa a los perros domésticos de los caninos salvajes, como coyotes, zorros y lobos.
+        <br>
+        Los perros domésticos se mantienen principalmente como mascotas, aunque muchas razas son capaces de sobrevivir por sí mismas, ya sea en un bosque o en las calles de una ciudad. Según un estudio realizado en 2016, un tercio de todos los hogares del mundo tienen un perro. Esto convierte al perro doméstico en la mascota más popular del planeta.
+        </p>
+        <hr>
+        <h3>Razas de Perros</h3>
+        <br>
+        <div class="razas-img">
+            <img src="{{ url_for('static', filename='img/razasgrande.jpg') }}" alt="Imagen Perrito">
+        </div>
+    </section>
+</body>
+</html>

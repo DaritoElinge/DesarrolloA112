@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comportamiento</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="{{ url_for('index') }}">Index</a>
+            <li><a href="{{ url_for('home') }}">Tipo, Clasificacion y Raza</a>
+            <li><a href="{{ url_for('comportamiento') }}">Comportamiento</a>
+            <li><a href="{{ url_for('alimentacion') }}">Alimentacion</a>
+            <li><a href="{{ url_for('habitos') }}">Habitos</a>
+            <li><a href="{{ url_for('domesticacion') }}">Domesticación</a>
+        </ul>
+    </nav>
+
+    <h2> Comportamiento de los perros </h2>
+
+    <table class="tabla-comport">
+        <tr>
+            <th>Comportamiento</th>
+            <th>Descripcion</th>
+        </tr>
+        <tr>
+            <th>Ladrido</th>
+            <th>Se comunican de manera vocal para expresar emociones</th>
+        </tr>
+        <tr>
+            <th>Olfateo</th>
+            <th>Los perros tienen un gran ofalto superior al hombre, mediente este se puede determinar si estan enfermos o sanos</th>
+        </tr>
+        <tr>
+            <th>Meneo de Cola</th>
+            <th>Por la cola, puede expresar si estan extresados, contentos o en guardia</th>
+        </tr>
+        <tr>
+            <th>Escabar</th>
+            <th>Lo hacen muy a menudo, muchas veces para ocultar sus objetos favoritos o por instinto de busqueda</th>
+        </tr>
+        <tr>
+            <th>Orejas</th>
+            <th>Al igual que la cola, suelen expresarse por medio de esta</th>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domesticación</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="{{ url_for('index') }}">Index</a>
+            <li><a href="{{ url_for('home') }}">Tipo, Clasificacion y Raza</a>
+            <li><a href="{{ url_for('comportamiento') }}">Comportamiento</a>
+            <li><a href="{{ url_for('alimentacion') }}">Alimentacion</a>
+            <li><a href="{{ url_for('habitos') }}">Habitos</a>
+            <li><a href="{{ url_for('domesticacion') }}">Domesticación</a>
+        </ul>
+    </nav>
+
+    <section class="domesticacion">
+        <div class="domest-form">
+            <h2>Si quieres saber como domesticar a tu perro correctamente, contáctanos</h2>
+            <form action="/submit_contact" method="POST" class="contacto-form">
+                <label for="name">Nombre y Apellido</label>
+                <input type="text" id="name" name="name" placeholder="Ingrese su nombre..." required>
+    
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico..." required>
+    
+                <label for="subject">Tema</label>
+                <input type="text" id="subject" name="subject" placeholder="Ingrese su tema..." required>
+    
+                <label for="message">Comentario</label>
+                <textarea id="message" name="message" placeholder="Ingrese su comentario..." rows="6" required></textarea>
+    
+                <button type="submit">Enviar</button>
+            </form>
+    </section>
+    
+    </div>
+</body>
+</html>

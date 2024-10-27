@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #d1e2a3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0px;
+    list-style: none;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #30a12e;
+}
+
+.home-img {
+    text-align: center; 
+    margin-top: 10px;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+.razas-img {
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.tabla-comport {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 20px;
+    text-align: left;
+}
+
+.tabla-comport th {
+    border: 1px solid #000000;
+    padding: 8px;
+}
+
+.alimen-img {
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.alimentacion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.alimentacion img {
+    width: 30%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.alimen-texto {
+    flex: 1;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+.alimentacion2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.alimentacion2 img {
+    width: 30%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.alimentacion3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.alimentacion3 img {
+    width: 30%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.habitos-video {
+    text-align: center; 
+    margin-top: 10px;
+}
+
+.domesticacion {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contacto-form {
+    background-color: white;
+    padding: 50px 50px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.contacto-form label {
+    margin-bottom: 5px;
+    font-size: 14px;
+
+}
+
+.contacto-form input[type="text"],
+.contacto-form input[type="email"],
+.contacto-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto-form input[type="text"]:focus,
+.contacto-form input[type="email"]:focus,
+.contacto-form textarea:focus {
+   border-color: #30a12e;
+   outline: none;
+}
+
+.contacto-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #30a12e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contacto-form button:hover {
+    background-color: #9cb590;
+    color: #000000;
+}
